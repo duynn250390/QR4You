@@ -83,7 +83,6 @@ $(document).on('click', '.menu_show.close', function() {
 function table_action() {
     var len_box = $('.main_table .item_box').length;
     var margin_add = (len_box / 2) * 15;
-    console.log(len_box % 1);
 
     if (len_box > 0) {
         if (len_box % 2 == 1) {
