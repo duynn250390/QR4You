@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR4You Tempalte</title>
+
+    <!-- Main CSS -->
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'bua6gyj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <aside class="main_warap">
+        <section class="main_header">
+            <div class="container">
+                <div class="content_header">
+                    <div class="hideText menu_show open" id="menu_show">menu_show</div>
+                    <div class="main_logo">
+                        <a href=""><span class="logo"></span></a>
+                        <h2 class="txt_logo">TOM N TOMS COFFEE</h2>
+                    </div>
+                    <div class="box_time">
+                        <div class="time">
+                            <span class="hour">11</span>:<span class="min">11</span>:<span class="sec">11</span>
+                        </div>
+                        <div class="day">
+                            <span class="year">11</span>.<span class="mon">11</span>.<span class="days">11</span>
+                            (목)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="main_menu">
+            <ul class="list_item level0">
+                <li class="item"><a href="">주문상품 출고 화면</a></li>
+                <li class="item tree_menu">
+                    <a href="">주문 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">메뉴 관리</a></li>
+                        <li><a href="">주문 조회</a></li>
+                        <li><a href="">주문 취소</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">메뉴 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">Main Menu 관리</a></li>
+                        <li><a href="">Sub Menu 관리</a></li>
+                        <li><a href="">메뉴 품절 관리</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">매출 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">일 매출 관리</a></li>
+                        <li><a href="">월 매출 관리</a></li>
+                        <li><a href="">결제(승인 내역) 조회</a></li>
+                        <li><a href="">주문 취소 내역 조회</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="">로그아웃</a></li>
+            </ul>
+        </nav>
+        <section class="main_top">
+            <div class="container">
+                <div class="content_main_top">
+                    <div class="left_con">
+                        <h2 class="top_con">탐앤탐스 강남점</h2>
+                        <h2 class="bot_con">출고전 주문 목록입니다.</h2>
+                    </div>
+                    <div class="center_con">
+                        <h2 class="top_con">출고번호</h2>
+                        <h2 class="bot_con num">233111</h2>
+                    </div>
+                    <div class="right_con">
+                        <h2 class="top_con">출고대기</h2>
+                        <h2 class="bot_con num">12</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_body table">
+            <div class="container">
+                <div class="main__table">
+                    <div class="main_table">
+                        <div class="item_box order_sussec ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 :<strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_sussec ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 :<strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_sussec ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 :<strong> 15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                        <div class="item_box order_watting ">
+                            <div class="top_key"> 코드 : <span id="id_num" class="id_num">202002130093</span></div>
+                            <div class="time_key"> 코드 : 3개 11:25:30</div>
+                            <div class="numkey_status">
+                                <span class="numkey">233111</span>
+                                <span class="status hideText order">Order</span>
+                            </div>
+                            <div class="time">경과 시간 : <strong>15:20:33</strong></div>
+                            <div class="box_list_eat">
+                                <ul class="list_eats">
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">1개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">16개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">12개</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                        <div class="price">18개</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action_check call">
+                                <span class="icon_status hideText">icon status</span>
+                                상품 완료 고객 호출하기
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script src="public/js/mquery.js"></script>
+</body>
+
+</html>

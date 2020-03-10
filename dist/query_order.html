@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR4You Tempalte</title>
+
+    <!-- Main CSS -->
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'bua6gyj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <aside class="main_warap">
+        <section class="main_header">
+            <div class="container">
+                <div class="content_header">
+                    <div class="hideText menu_show open" id="menu_show">menu_show</div>
+                    <div class="main_logo">
+                        <a href=""><span class="logo"></span></a>
+                        <h2 class="txt_logo">TOM N TOMS COFFEE</h2>
+                    </div>
+                    <div class="box_time">
+                        <div class="time">
+                            <span class="hour">11</span>:<span class="min">11</span>:<span class="sec">11</span>
+                        </div>
+                        <div class="day">
+                            <span class="year">11</span>.<span class="mon">11</span>.<span class="days">11</span>
+                            (목)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="main_menu">
+            <ul class="list_item level0">
+                <li class="item"><a href="">주문상품 출고 화면</a></li>
+                <li class="item tree_menu">
+                    <a href="">주문 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">메뉴 관리</a></li>
+                        <li><a href="">주문 조회</a></li>
+                        <li><a href="">주문 취소</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">메뉴 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">Main Menu 관리</a></li>
+                        <li><a href="">Sub Menu 관리</a></li>
+                        <li><a href="">메뉴 품절 관리</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">매출 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">일 매출 관리</a></li>
+                        <li><a href="">월 매출 관리</a></li>
+                        <li><a href="">결제(승인 내역) 조회</a></li>
+                        <li><a href="">주문 취소 내역 조회</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="">로그아웃</a></li>
+            </ul>
+        </nav>
+        <section class="main_top">
+            <div class="container">
+                <div class="content_main_top query_table">
+                    <div class="heading">주문 관리</div>
+                    <div class="sum_control">
+                        <ul>
+                            <li><button class="btn btn_add">추가</button></li>
+                            <li><button class="btn btn_edit">수정</button></li>
+                            <li><button class="btn btn_delete">삭제</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_table query_table">
+            <div class="fathe_table">
+                <div class="container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">주문 번호</th>
+                                <th scope="col">주문날짜</th>
+                                <th scope="col">주문시간</th>
+                                <th scope="col">고객 전화번호</th>
+                                <th scope="col">총 결제 금액</th>
+                                <th scope="col">주문 내역</th>
+                                <th scope="col">주문처리결과</th>
+                                <th scope="col">결제 취소</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                            <div class="view"></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                            <tr>
+                                <td scope="row">0001</th>
+                                <td>2020-2-13</td>
+                                <td>18:40:25</td>
+                                <td>010-XXXX-XXXX</td>
+                                <td><strong>6,400원</strong></td>
+                                <td class="action_order">
+                                    <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>준비중</td>
+                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination__ center">
+                <ul class="pagination ">
+                    <li class="page_item disabled">
+                        <a class="page_link hideText prevAll" href="">prev all</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText prevStep" href="">prev 1 step</a>
+                    </li>
+                    <li class="page_item ">
+                        <input type="number" class="add_num" value="3">
+                    </li>
+                    <li class="page_item ">
+                        /
+                    </li>
+                    <li class="page_item ">
+                        12
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText nextStep" href="">next 1 step</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText nextAll" href="">next all</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText frest" href="">next all</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </aside>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script src="public/js/mquery.js"></script>
+</body>
+
+</html>
