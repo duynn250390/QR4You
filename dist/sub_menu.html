@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR4You Tempalte</title>
+
+    <!-- Main CSS -->
+    <link href="public/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'bua6gyj',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <aside class="main_warap">
+        <section class="main_header">
+            <div class="container">
+                <div class="content_header">
+                    <div class="hideText menu_show open" id="menu_show">menu_show</div>
+                    <div class="main_logo">
+                        <a href=""><span class="logo"></span></a>
+                        <h2 class="txt_logo">TOM N TOMS COFFEE</h2>
+                    </div>
+                    <div class="box_time">
+                        <div class="time">
+                            <span class="hour">11</span>:<span class="min">11</span>:<span class="sec">11</span>
+                        </div>
+                        <div class="day">
+                            <span class="year">11</span>.<span class="mon">11</span>.<span class="days">11</span>
+                            (목)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <nav class="main_menu">
+            <ul class="list_item level0">
+                <li class="item"><a href="">주문상품 출고 화면</a></li>
+                <li class="item tree_menu">
+                    <a href="">주문 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">메뉴 관리</a></li>
+                        <li><a href="">주문 조회</a></li>
+                        <li><a href="">주문 취소</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">메뉴 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">Main Menu 관리</a></li>
+                        <li><a href="">Sub Menu 관리</a></li>
+                        <li><a href="">메뉴 품절 관리</a></li>
+                    </ul>
+                </li>
+                <li class="item tree_menu">
+                    <a href="">매출 관리</a>
+                    <ul class="list_item level1">
+                        <li><a href="">일 매출 관리</a></li>
+                        <li><a href="">월 매출 관리</a></li>
+                        <li><a href="">결제(승인 내역) 조회</a></li>
+                        <li><a href="">주문 취소 내역 조회</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="">로그아웃</a></li>
+            </ul>
+        </nav>
+        <section class="main_top">
+            <div class="container">
+                <div class="content_main_top query_tableSUM">
+                    <div class="heading">
+                        Sub Menu 관리
+                        <button class="excel_sow btn btn_sussec">엑셀 파일 등록</button>
+                    </div>
+                    <div class="sum_control">
+                        <ul>
+                            <li><button class="btn btn_add" data-toggle="modal" data-target="#modal_addMenu">추가</button></li>
+                            <li><button class="btn btn_edit">수정</button></li>
+                            <li><button class="btn btn_delete">삭제</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal_ss">
+
+            <!-- Modal Add Menu -->
+            <div class="modal fade" id="modal_addMenu" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered modal_qr_order modal_add_menu" role="document">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <h5 class="modal_title">Main Menu 추가</h5>
+                        </div>
+                        <div class="modal_body">
+                            <ul class="form_add_menu">
+                                <li>
+                                    <div class="title">Main Menu 이름</div>
+                                    <div class="input_txt">
+                                        <input type="text" placeholder="" value="커피">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">설명</div>
+                                    <div class="input_txt">
+                                        <input type="text" placeholder="" value="Lorem ipsum dolor sit amet, consetetur.">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal_footer">
+                            <button type="button" class="btn btn_light">취소</button>
+                            <button type="button" class="btn btn_sussec">추가</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_table query_table">
+            <div class="container">
+                <div class="tabel_div">
+                    <div class="item_row heading">
+                        <div class="item act hideText">Action</div>
+                        <div class="item num">No</div>
+                        <div class="item name">메뉴 이름</div>
+                        <div class="item name ">가격</div>
+                        <div class="item name">추가 옵션</div>
+                        <div class="item des">품절 여부</div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu001">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu001">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu002">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu002">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu003">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu003">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu004">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu004">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu005">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu005">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu006">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu006">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu007">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu007">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu008">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu008">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu009">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu009">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu010">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu010">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu011">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu011">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                    <div class="item_row ">
+                        <div class="item act">
+                            <div class="box_in_check checkbox">
+                                <input class="input_action hide" type="checkbox" id="checkmenu012">
+                                <span class="checkmark_action"></span>
+                                <label class="label_action hideText" for="checkmenu012">Hello</label>
+                            </div>
+                        </div>
+                        <div class="item num center">1</div>
+                        <div class="item name center_left">아메리카노</div>
+                        <div class="item name center_left">1,500원</div>
+                        <div class="item name center">
+                            <button class="btn btn_default">추가 옵션 보기</button>
+                        </div>
+                        <div class="item  des center_left">
+                            <span class="red">품절</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination__ center">
+                <ul class="pagination ">
+                    <li class="page_item disabled">
+                        <a class="page_link hideText prevAll" href="">prev all</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText prevStep" href="">prev 1 step</a>
+                    </li>
+                    <li class="page_item ">
+                        <input type="number" class="add_num" value="3">
+                    </li>
+                    <li class="page_item ">
+                        /
+                    </li>
+                    <li class="page_item ">
+                        12
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText nextStep" href="">next 1 step</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText nextAll" href="">next all</a>
+                    </li>
+                    <li class="page_item ">
+                        <a class="page_link hideText frest" href="">next all</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </aside>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script src="public/js/mquery.js"></script>
+    <script src="public/js/modal.js"></script>
+</body>
+
+</html>

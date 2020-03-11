@@ -120,11 +120,11 @@
             <div class="modal fade" id="modal_review" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal_dialog modal_dialog_centered modal_qr_order" role="document">
                     <div class="modal_content">
-                        <div class="modal_header">
+                        <div class="modal_header center">
                             <h5 class="modal_title">주문 세부 내역</h5>
-                            <div class="num">주문 번호 <span class="num_id">0900</span></div>
                         </div>
                         <div class="modal_body">
+                            <div class="num">주문 번호 <span class="num_id">0900</span></div>
                             <table class="table table_order">
                                 <tbody>
                                     <tr class="list_order">
@@ -196,6 +196,7 @@
                             <h5 class="modal_title">결제 취소</h5>
                         </div>
                         <div class="modal_body">
+                            <div class="num">주문 번호 <span class="num_id">0900</span></div>
                             <div class="box_sum_col clear">
                                 <div class="floatLeft box_left">
                                     <ul class="list_info">
@@ -226,7 +227,8 @@
                             </div>
                         </div>
                         <div class="modal_footer">
-                            <button type="button" class="btn btn_primary">확인</button>
+                            <button type="button" class="btn btn_light">취소</button>
+                            <button type="button" class="btn btn_sussec">결제 취소</button>
                         </div>
                     </div>
                 </div>
@@ -259,25 +261,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view">
-                                                <!-- Button trigger modal -->
-                                                <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">
-                                                    세부 내역
-                                                </button>
-                                            </div>
                                         </li>
                                         <li>
                                             <div class="name">카페라떼</div>
-                                            <div class="view"></div>
                                         </li>
                                         <li>
                                             <div class="name">카라멜 마끼아또</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -287,14 +285,23 @@
                                 <td><strong>6,400원</strong></td>
                                 <td class="action_order">
                                     <ul>
+                                        <li>
+                                            <div class="name">아메리카노</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
                                         <li>
                                             <div class="name">카라멜 마끼아또</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -306,12 +313,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -323,12 +339,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -340,12 +365,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -357,12 +391,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -374,12 +417,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -391,12 +443,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -408,12 +469,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -425,12 +495,21 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -442,13 +521,23 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카페라떼</div>
+                                        </li>
+                                        <li>
+                                            <div class="name">카라멜 마끼아또</div>
                                         </li>
                                     </ul>
+                                    <div class="btn_box">
+                                        <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">세부 내역</button>
+                                    </div>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                        취소</button></td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
