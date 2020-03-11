@@ -115,6 +115,123 @@
                 </div>
             </div>
         </section>
+        <section class="modal_ss">
+            <!-- Modal Detail -->
+            <div class="modal fade" id="modal_review" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered modal_qr_order" role="document">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <h5 class="modal_title">주문 세부 내역</h5>
+                            <div class="num">주문 번호 <span class="num_id">0900</span></div>
+                        </div>
+                        <div class="modal_body">
+                            <table class="table table_order">
+                                <tbody>
+                                    <tr class="list_order">
+                                        <td class="name_order">아메리카노</td>
+                                        <td>1,500원</td>
+                                        <td>Regular<br />+500원</td>
+                                        <td>Shot 추가<br />+500원</td>
+                                        <td>토핑 추가<br />+500원</td>
+                                        <td>3,000원</td>
+                                    </tr>
+                                    <tr class="list_order">
+                                        <td class="name_order">아메리카노</td>
+                                        <td>1,500원</td>
+                                        <td>Regular<br />+500원</td>
+                                        <td>Shot 추가<br />+500원</td>
+                                        <td>토핑 추가<br />+500원</td>
+                                        <td>3,000원</td>
+                                    </tr>
+                                    <tr class="list_order">
+                                        <td class="name_order">아메리카노</td>
+                                        <td>1,500원</td>
+                                        <td>Regular<br />+500원</td>
+                                        <td>Shot 추가<br />+500원</td>
+                                        <td>토핑 추가<br />+500원</td>
+                                        <td>3,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="box_sum_col clear">
+                                <div class="floatLeft box_left">
+                                    <ul class="list_info">
+                                        <li>
+                                            <div class="title">주문 날짜</div>
+                                            <div class="info">2020-02-13</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">주문 시간</div>
+                                            <div class="info">18:40:25</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">전화번호</div>
+                                            <div class="info">010-XXXX-XXXX</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="floatLeft box_right">
+                                    <div class="box box_one">
+                                        <div class="title contain">주문 수량</div>
+                                        <div class="info contain">3개</div>
+                                    </div>
+                                    <div class="box box_two">
+                                        <div class="title contain">주문 수량</div>
+                                        <div class="info contain">26,500원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal_footer">
+                            <button type="button" class="btn btn_primary">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Cancel Order -->
+            <div class="modal fade" id="canel_detailOrder" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered modal_qr_order canel_older" role="document">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <h5 class="modal_title">결제 취소</h5>
+                        </div>
+                        <div class="modal_body">
+                            <div class="box_sum_col clear">
+                                <div class="floatLeft box_left">
+                                    <ul class="list_info">
+                                        <li>
+                                            <div class="title">주문 날짜</div>
+                                            <div class="info">2020-02-13</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">주문 시간</div>
+                                            <div class="info">18:40:25</div>
+                                        </li>
+                                        <li>
+                                            <div class="title">전화번호</div>
+                                            <div class="info">010-XXXX-XXXX</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="floatLeft box_right">
+                                    <div class="box box_one">
+                                        <div class="title contain">주문 수량</div>
+                                        <div class="info contain">3개</div>
+                                    </div>
+                                    <div class="box box_two">
+                                        <div class="title contain">주문 수량</div>
+                                        <div class="info contain">26,500원</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal_footer">
+                            <button type="button" class="btn btn_primary">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="main_table query_table">
             <div class="container">
                 <div class="fathe_table">
@@ -142,7 +259,12 @@
                                     <ul>
                                         <li>
                                             <div class="name">아메리카노</div>
-                                            <div class="view"><button class="btn btn_view">세부 내역</button></div>
+                                            <div class="view">
+                                                <!-- Button trigger modal -->
+                                                <button type="button" class="btn btn_view" data-toggle="modal" data-target="#modal_review">
+                                                    세부 내역
+                                                </button>
+                                            </div>
                                         </li>
                                         <li>
                                             <div class="name">카페라떼</div>
@@ -155,7 +277,7 @@
                                     </ul>
                                 </td>
                                 <td>준비중</td>
-                                <td><button class="btn btn_cancel">결제 취소</button></td>
+                                <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제 취소</button></td>
                             </tr>
                             <tr>
                                 <td scope="row">0001</th>
@@ -331,6 +453,7 @@
                     </table>
                 </div>
             </div>
+
             <div class="pagination__ center">
                 <ul class="pagination ">
                     <li class="page_item disabled">
@@ -368,6 +491,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Main JS -->
     <script src="public/js/mquery.js"></script>
+    <script src="public/js/modal.js"></script>
 </body>
 
 </html>
