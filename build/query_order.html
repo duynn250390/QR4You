@@ -1,0 +1,490 @@
+@@include('../layout/header.html')
+
+<aside class="main_warap">
+    @@include('../layout/top_header.html')
+    @@include('../layout/menu.html')
+    <section class="main_top">
+        <div class="container">
+            <div class="content_main_top query_table">
+                <div class="heading">주문 관리</div>
+                <div class="sum_control">
+                    <ul>
+                        <li><button class="btn btn_add">추가</button></li>
+                        <li><button class="btn btn_edit">수정</button></li>
+                        <li><button class="btn btn_delete">삭제</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal_ss">
+        <!-- Modal Detail -->
+        <div class="modal fade" id="modal_review" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal_dialog modal_dialog_centered modal_qr_order" role="document">
+                <div class="modal_content">
+                    <div class="modal_header center">
+                        <h5 class="modal_title">주문 세부 내역</h5>
+                    </div>
+                    <div class="modal_body">
+                        <div class="num">주문 번호 <span class="num_id">0900</span></div>
+                        <table class="table table_order">
+                            <tbody>
+                                <tr class="list_order">
+                                    <td class="name_order">아메리카노</td>
+                                    <td>1,500원</td>
+                                    <td>Regular<br />+500원</td>
+                                    <td>Shot 추가<br />+500원</td>
+                                    <td>토핑 추가<br />+500원</td>
+                                    <td>3,000원</td>
+                                </tr>
+                                <tr class="list_order">
+                                    <td class="name_order">아메리카노</td>
+                                    <td>1,500원</td>
+                                    <td>Regular<br />+500원</td>
+                                    <td>Shot 추가<br />+500원</td>
+                                    <td>토핑 추가<br />+500원</td>
+                                    <td>3,000원</td>
+                                </tr>
+                                <tr class="list_order">
+                                    <td class="name_order">아메리카노</td>
+                                    <td>1,500원</td>
+                                    <td>Regular<br />+500원</td>
+                                    <td>Shot 추가<br />+500원</td>
+                                    <td>토핑 추가<br />+500원</td>
+                                    <td>3,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="box_sum_col clear">
+                            <div class="floatLeft box_left">
+                                <ul class="list_info">
+                                    <li>
+                                        <div class="title">주문 날짜</div>
+                                        <div class="info">2020-02-13</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">주문 시간</div>
+                                        <div class="info">18:40:25</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">전화번호</div>
+                                        <div class="info">010-XXXX-XXXX</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="floatLeft box_right">
+                                <div class="box box_one">
+                                    <div class="title contain">주문 수량</div>
+                                    <div class="info contain">3개</div>
+                                </div>
+                                <div class="box box_two">
+                                    <div class="title contain">주문 수량</div>
+                                    <div class="info contain">26,500원</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="btn btn_primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Cancel Order -->
+        <div class="modal fade" id="canel_detailOrder" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal_dialog modal_dialog_centered modal_qr_order canel_older" role="document">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <h5 class="modal_title">결제 취소</h5>
+                    </div>
+                    <div class="modal_body">
+                         <div class="num">주문 번호 <span class="num_id">0900</span></div>
+                        <div class="box_sum_col clear">
+                            <div class="floatLeft box_left">
+                                <ul class="list_info">
+                                    <li>
+                                        <div class="title">주문 날짜</div>
+                                        <div class="info">2020-02-13</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">주문 시간</div>
+                                        <div class="info">18:40:25</div>
+                                    </li>
+                                    <li>
+                                        <div class="title">전화번호</div>
+                                        <div class="info">010-XXXX-XXXX</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="floatLeft box_right">
+                                <div class="box box_one">
+                                    <div class="title contain">주문 수량</div>
+                                    <div class="info contain">3개</div>
+                                </div>
+                                <div class="box box_two">
+                                    <div class="title contain">주문 수량</div>
+                                    <div class="info contain">26,500원</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="btn btn_light">취소</button>
+                        <button type="button" class="btn btn_sussec">결제 취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main_table query_table">
+        <div class="container">
+            <div class="fathe_table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">주문 번호</th>
+                            <th scope="col">주문날짜</th>
+                            <th scope="col">주문시간</th>
+                            <th scope="col">고객 전화번호</th>
+                            <th scope="col">총 결제 금액</th>
+                            <th scope="col">주문 내역</th>
+                            <th scope="col">주문처리결과</th>
+                            <th scope="col">결제 취소</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                        <tr>
+                            <td scope="row">0001</th>
+                            <td>2020-2-13</td>
+                            <td>18:40:25</td>
+                            <td>010-XXXX-XXXX</td>
+                            <td><strong>6,400원</strong></td>
+                            <td class="action_order">
+                                <ul>
+                                    <li>
+                                        <div class="name">아메리카노</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카페라떼</div>
+                                    </li>
+                                    <li>
+                                        <div class="name">카라멜 마끼아또</div>
+                                    </li>
+                                </ul>
+                                <div class="btn_box">
+                                    <button type="button" class="btn btn_view" data-toggle="modal"
+                                        data-target="#modal_review">세부 내역</button>
+                                </div>
+                            </td>
+                            <td>준비중</td>
+                            <td><button class="btn btn_cancel" data-toggle="modal" data-target="#canel_detailOrder">결제
+                                    취소</button></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="pagination__ center">
+            <ul class="pagination ">
+                <li class="page_item disabled">
+                    <a class="page_link hideText prevAll" href="">prev all</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText prevStep" href="">prev 1 step</a>
+                </li>
+                <li class="page_item ">
+                    <input type="number" class="add_num" value="3">
+                </li>
+                <li class="page_item ">
+                    /
+                </li>
+                <li class="page_item ">
+                    12
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText nextStep" href="">next 1 step</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText nextAll" href="">next all</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText frest" href="">next all</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</aside>
+@@include('../layout/footer.html')

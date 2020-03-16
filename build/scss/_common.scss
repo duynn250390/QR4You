@@ -1,0 +1,38 @@
+.clear {
+    &:after {
+        @include clear_fix();
+    }
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.red {
+    color: #FF8D8D;
+}
+
+.W100 {
+    width: 100%;
+}
+
+.W50 {
+    width: 50%;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  
+  /* For IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+  

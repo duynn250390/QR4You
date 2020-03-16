@@ -108,13 +108,47 @@
                         <h2 class="top_con">탐앤탐스 강남점</h2>
                         <h2 class="bot_con">출고전 주문 목록입니다.</h2>
                     </div>
-                    <div class="center_con">
-                        <h2 class="top_con">출고번호</h2>
-                        <h2 class="bot_con num">233111</h2>
+                    <div class="right_sum">
+                        <div class="center_con">
+                            <h2 class="top_con">출고번호</h2>
+                            <h2 class="bot_con num cuso" data-toggle="modal" data-target="#modal_call_order">233111</h2>
+                        </div>
+                        <div class="right_con">
+                            <h2 class="top_con">출고대기</h2>
+                            <h2 class="bot_con num">12</h2>
+                        </div>
                     </div>
-                    <div class="right_con">
-                        <h2 class="top_con">출고대기</h2>
-                        <h2 class="bot_con num">12</h2>
+                </div>
+            </div>
+        </section>
+        <section class="modal_ss">
+            <!-- Modal Call Order -->
+            <div class="modal fade" id="modal_call_order" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered modal_qr_order modal_call_order" role="document">
+                    <div class="modal_content">
+                        <div class="modal_body">
+                            <div class="call_num ">
+                                <div class="box_numA ">
+                                    <label class="txt_name">주문번호</label>
+                                    <div class="in_num" id="in_num">2345</div>
+                                </div>
+                                <div class="box_numB  ">
+                                    <button class="btn_num">1</button>
+                                    <button class="btn_num">2</button>
+                                    <button class="btn_num">3</button>
+                                    <button class="btn_num">4</button>
+                                    <button class="btn_num">5</button>
+                                    <button class="btn_num">6</button>
+                                    <button class="btn_num">7</button>
+                                    <button class="btn_num">8</button>
+                                    <button class="btn_num">9</button>
+                                    <button class="btn_num btn_delete"><b class="hideText">dsds</b></button>
+                                    <button class="btn_num">0</button>
+                                    <button class="btn_num btn_clear"><b class="hideText">dsds</b></button>
+                                </div>
+                                <button class="btn btn_primary" data-dismiss="modal">Enter</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

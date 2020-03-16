@@ -110,7 +110,7 @@
                     </div>
                     <div class="sum_control">
                         <ul>
-                            <li><button class="btn btn_add" data-toggle="modal" data-target="#modal_addMenu">추가</button></li>
+                            <li><button class="btn btn_add" data-toggle="modal" data-target="#modal_add_option_menu">추가</button></li>
                             <li><button class="btn btn_edit">수정</button></li>
                             <li><button class="btn btn_delete">삭제</button></li>
                         </ul>
@@ -121,31 +121,117 @@
         <section class="modal_ss">
 
             <!-- Modal Add Menu -->
-            <div class="modal fade" id="modal_addMenu" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal_dialog modal_dialog_centered modal_qr_order modal_add_menu" role="document">
+            <div class="modal fade" id="modal_add_option_menu" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered style_modal modal_add_option_menu" role="document">
                     <div class="modal_content">
                         <div class="modal_header">
-                            <h5 class="modal_title">Main Menu 추가</h5>
+                            <h5 class="modal_title">Sub Menu 추가</h5>
+                        </div>
+                        <div class="modal_body">
+                            <div class="box_add_sub_menu clear">
+                                <div class="grop_control floatLeft W50">
+                                    <label>Main Menu 분류</label>
+                                    <div class="in_txt back_selecr">
+                                        <select class="fullcontrol">
+                                            <option>커피</option>
+                                            <option>커피</option>
+                                            <option>커피</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="grop_control floatLeft W50">
+                                    <label>메뉴 이름</label>
+                                    <div class="in_txt">
+                                        <input class="fullcontrol" type="text" value="아메리카노">
+                                    </div>
+                                </div>
+                                <div class="grop_control floatLeft W100">
+                                    <label>가격</label>
+                                    <div class="in_txt">
+                                        <input class="fullcontrol" type="text" value="1,500원">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_option">
+                                <ul>
+                                    <li>
+                                        <div class="box_name">Size (Small)</div>
+                                        <div class="box_price">+500원</div>
+                                        <button class="remove hideText">remove</button>
+                                    </li>
+                                    <li>
+                                        <div class="box_name">Size (Regular)</div>
+                                        <div class="box_price">+1000원</div>
+                                        <button class="remove hideText">remove</button>
+                                    </li>
+                                    <li>
+                                        <div class="box_name">Size (Large)</div>
+                                        <div class="box_price">+500원</div>
+                                        <button class="remove hideText">remove</button>
+                                    </li>
+                                    <li>
+                                        <div class="box_name">shot 추가</div>
+                                        <div class="box_price">+500원</div>
+                                        <button class="remove hideText">remove</button>
+                                    </li>
+                                    <li>
+                                        <div class="box_name">토핑</div>
+                                        <div class="box_price">+500원</div>
+                                        <button class="remove hideText">remove</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal_footer">
+                            <button type="button" class="btn btn_light">취소</button>
+                            <button type="button" class="btn btn_primary">추가</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal View Option Menu -->
+            <div class="modal fade" id="option_menu_more" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal_dialog modal_dialog_centered style_modal modal_option_menu" role="document">
+                    <div class="modal_content">
+                        <div class="modal_header">
+                            <h5 class="modal_title">아메리카노 추가 옵션</h5>
                         </div>
                         <div class="modal_body">
                             <ul class="form_add_menu">
                                 <li>
-                                    <div class="title">Main Menu 이름</div>
+                                    <div class="title">Size (Small)</div>
                                     <div class="input_txt">
-                                        <input type="text" placeholder="" value="커피">
+                                        <input type="text" placeholder="" value="+500원">
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="title">설명</div>
+                                    <div class="title">Size (Regular)</div>
                                     <div class="input_txt">
-                                        <input type="text" placeholder="" value="Lorem ipsum dolor sit amet, consetetur.">
+                                        <input type="text" placeholder="" value="+1000원">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">Size (Large)</div>
+                                    <div class="input_txt">
+                                        <input type="text" placeholder="" value="+1500원">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">shot 추가</div>
+                                    <div class="input_txt">
+                                        <input type="text" placeholder="" value="+500원">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">토핑</div>
+                                    <div class="input_txt">
+                                        <input type="text" placeholder="" value="+100원">
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="modal_footer">
-                            <button type="button" class="btn btn_light">취소</button>
-                            <button type="button" class="btn btn_sussec">추가</button>
+                            <button type="button" class="btn btn_primary">추가</button>
                         </div>
                     </div>
                 </div>
@@ -174,7 +260,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -192,7 +279,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -210,7 +298,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -228,7 +317,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -246,7 +336,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -264,7 +355,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -282,7 +374,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -300,7 +393,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -318,7 +412,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -336,7 +431,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -354,7 +450,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>
@@ -372,7 +469,8 @@
                         <div class="item name center_left">아메리카노</div>
                         <div class="item name center_left">1,500원</div>
                         <div class="item name center">
-                            <button class="btn btn_default">추가 옵션 보기</button>
+                            <button class="btn btn_default" data-toggle="modal" data-target="#option_menu_more">추가 옵션
+                                보기</button>
                         </div>
                         <div class="item  des center_left">
                             <span class="red">품절</span>

@@ -1,0 +1,254 @@
+@@include('../layout/header.html')
+
+<aside class="main_warap">
+    @@include('../layout/top_header.html')
+    @@include('../layout/menu.html')
+    <section class="main_top">
+        <div class="container">
+            <div class="content_main_top query_tableSUM">
+                <div class="heading">
+                    Main Menu 관리
+                    <button class="excel_sow btn btn_sussec">엑셀 파일 등록</button>
+                </div>
+                <div class="sum_control">
+                    <ul>
+                        <li><button class="btn btn_add" data-toggle="modal" data-target="#modal_addMenu">추가</button></li>
+                        <li><button class="btn btn_edit">수정</button></li>
+                        <li><button class="btn btn_delete">삭제</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal_ss">
+        <!-- Modal Add Menu -->
+        <div class="modal fade" id="modal_addMenu" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal_dialog modal_dialog_centered modal_qr_order modal_add_menu" role="document">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <h5 class="modal_title">Main Menu 추가</h5>
+                    </div>
+                    <div class="modal_body">
+                        <ul class="form_add_menu">
+                            <li>
+                                <div class="title">Main Menu 이름</div>
+                                <div class="input_txt">
+                                    <input type="text" placeholder="" value="커피">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">설명</div>
+                                <div class="input_txt">
+                                    <input type="text" placeholder="" value="Lorem ipsum dolor sit amet, consetetur.">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal_footer">
+                        <button type="button" class="btn btn_light">취소</button>
+                        <button type="button" class="btn btn_sussec">추가</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main_table query_table">
+        <div class="container">
+            <div class="tabel_div">
+                <div class="item_row heading">
+                    <div class="item act hideText">Action</div>
+                    <div class="item num">No</div>
+                    <div class="item name">메뉴 이름</div>
+                    <div class="item des">설명</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu001">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu001">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu002">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu002">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu003">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu003">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu004">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu004">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu005">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu005">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu006">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu006">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu007">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu007">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu008">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu008">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu009">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu009">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu010">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu010">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu011">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu011">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu012">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu012">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+                <div class="item_row ">
+                    <div class="item act">
+                        <div class="box_in_check checkbox">
+                            <input class="input_action hide" type="checkbox" id="checkmenu013">
+                            <span class="checkmark_action"></span>
+                            <label class="label_action hideText" for="checkmenu013">Hello</label>
+                        </div>
+                    </div>
+                    <div class="item num">1</div>
+                    <div class="item name">커피</div>
+                    <div class="item des">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination__ center">
+            <ul class="pagination ">
+                <li class="page_item disabled">
+                    <a class="page_link hideText prevAll" href="">prev all</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText prevStep" href="">prev 1 step</a>
+                </li>
+                <li class="page_item ">
+                    <input type="number" class="add_num" value="3">
+                </li>
+                <li class="page_item ">
+                    /
+                </li>
+                <li class="page_item ">
+                    12
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText nextStep" href="">next 1 step</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText nextAll" href="">next all</a>
+                </li>
+                <li class="page_item ">
+                    <a class="page_link hideText frest" href="">next all</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</aside>
+@@include('../layout/footer.html')
